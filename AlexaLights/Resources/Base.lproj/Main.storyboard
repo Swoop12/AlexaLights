@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="hlB-w2-eUe" customClass="LightTableViewCell" customModule="AlexaLights" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lightCell" rowHeight="117" id="hlB-w2-eUe" customClass="LightTableViewCell" customModule="AlexaLights" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="117"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hlB-w2-eUe" id="4iz-a3-Btz">
@@ -54,6 +54,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lightSwitch" destination="loE-CD-ADA" id="3FB-Sb-uxX"/>
                                     <outlet property="roomImageView" destination="ZZ8-V0-PdG" id="0je-rm-Xqz"/>
                                     <outlet property="roomNameLabel" destination="lHr-NP-SHu" id="uJg-h8-tDS"/>
                                 </connections>

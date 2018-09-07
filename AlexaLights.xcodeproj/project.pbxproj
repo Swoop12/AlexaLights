@@ -68,7 +68,7 @@
 				F79DEDA3214203FA0025398E /* ViewControllers */,
 				F79DEDA4214204250025398E /* Views */,
 				F79DEDAC214210F40025398E /* Models */,
-				F79DEDAD2142111B0025398E /* LightController.swift */,
+				F79DEDAF214216DA0025398E /* ModelControllers */,
 			);
 			path = AlexaLights;
 			sourceTree = "<group>";
@@ -109,6 +109,14 @@
 				F79DEDAA214207D60025398E /* Light+Convenience.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F79DEDAF214216DA0025398E /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F79DEDAD2142111B0025398E /* LightController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
