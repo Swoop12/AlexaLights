@@ -11,6 +11,11 @@
 		F79DED922141FB400025398E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79DED902141FB400025398E /* Main.storyboard */; };
 		F79DED942141FB400025398E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DED932141FB400025398E /* Assets.xcassets */; };
 		F79DED972141FB400025398E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79DED952141FB400025398E /* LaunchScreen.storyboard */; };
+		F79DEDA02142023C0025398E /* LightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DED9F2142023C0025398E /* LightsTableViewController.swift */; };
+		F79DEDA22142030E0025398E /* LightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDA12142030E0025398E /* LightTableViewCell.swift */; };
+		F79DEDA7214204550025398E /* AlexaLights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDA5214204550025398E /* AlexaLights.xcdatamodeld */; };
+		F79DEDA9214205CF0025398E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDA8214205CF0025398E /* CoreDataStack.swift */; };
+		F79DEDAB214207D60025398E /* Light+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDAA214207D60025398E /* Light+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F79DED932141FB400025398E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79DED962141FB400025398E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79DED982141FB400025398E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79DED9F2142023C0025398E /* LightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsTableViewController.swift; sourceTree = "<group>"; };
+		F79DEDA12142030E0025398E /* LightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTableViewCell.swift; sourceTree = "<group>"; };
+		F79DEDA6214204550025398E /* AlexaLights.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlexaLights.xcdatamodel; sourceTree = "<group>"; };
+		F79DEDA8214205CF0025398E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F79DEDAA214207D60025398E /* Light+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Light+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				F79DED9E2141FFC10025398E /* Resources */,
+				F79DEDA3214203FA0025398E /* ViewControllers */,
+				F79DEDA4214204250025398E /* Views */,
+				F79DEDA5214204550025398E /* AlexaLights.xcdatamodeld */,
+				F79DEDA8214205CF0025398E /* CoreDataStack.swift */,
+				F79DEDAA214207D60025398E /* Light+Convenience.swift */,
 			);
 			path = AlexaLights;
 			sourceTree = "<group>";
@@ -67,6 +82,22 @@
 				F79DED982141FB400025398E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F79DEDA3214203FA0025398E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F79DED9F2142023C0025398E /* LightsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F79DEDA4214204250025398E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F79DEDA12142030E0025398E /* LightTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79DEDA9214205CF0025398E /* CoreDataStack.swift in Sources */,
+				F79DEDA02142023C0025398E /* LightsTableViewController.swift in Sources */,
+				F79DEDAB214207D60025398E /* Light+Convenience.swift in Sources */,
+				F79DEDA22142030E0025398E /* LightTableViewCell.swift in Sources */,
+				F79DEDA7214204550025398E /* AlexaLights.xcdatamodeld in Sources */,
 				F79DED8D2141FB400025398E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F79DEDA5214204550025398E /* AlexaLights.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F79DEDA6214204550025398E /* AlexaLights.xcdatamodel */,
+			);
+			currentVersion = F79DEDA6214204550025398E /* AlexaLights.xcdatamodel */;
+			path = AlexaLights.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F79DED812141FB400025398E /* Project object */;
 }
