@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n3y-Fr-2xV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="QQd-nM-1ix">
+            <objects>
+                <tableViewController id="n3y-Fr-2xV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mog-MQ-1M5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="hlB-w2-eUe">
+                                <rect key="frame" x="0.0" y="28" width="375" height="117"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hlB-w2-eUe" id="4iz-a3-Btz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaundryRoom" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ8-V0-PdG">
+                                            <rect key="frame" x="32" y="21" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ZZ8-V0-PdG" secondAttribute="height" multiplier="1 : 1" id="Crx-lr-W3O"/>
+                                                <constraint firstAttribute="width" constant="75" id="tmd-aH-ocJ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Room Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-NP-SHu">
+                                            <rect key="frame" x="115" y="48" width="106" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loE-CD-ADA">
+                                            <rect key="frame" x="310" y="43" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZZ8-V0-PdG" firstAttribute="leading" secondItem="4iz-a3-Btz" secondAttribute="leadingMargin" constant="16" id="29V-Xf-U1f"/>
+                                        <constraint firstItem="loE-CD-ADA" firstAttribute="centerY" secondItem="4iz-a3-Btz" secondAttribute="centerY" id="64T-b1-Cp7"/>
+                                        <constraint firstItem="loE-CD-ADA" firstAttribute="trailing" secondItem="4iz-a3-Btz" secondAttribute="trailingMargin" id="Igr-3a-vKN"/>
+                                        <constraint firstItem="ZZ8-V0-PdG" firstAttribute="centerY" secondItem="4iz-a3-Btz" secondAttribute="centerY" id="Q0U-aQ-5v9"/>
+                                        <constraint firstItem="lHr-NP-SHu" firstAttribute="centerY" secondItem="4iz-a3-Btz" secondAttribute="centerY" id="gPy-48-RgQ"/>
+                                        <constraint firstItem="lHr-NP-SHu" firstAttribute="leading" secondItem="ZZ8-V0-PdG" secondAttribute="trailing" constant="8" id="kVG-ho-Dku"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n3y-Fr-2xV" id="9ZK-c3-zLr"/>
+                            <outlet property="delegate" destination="n3y-Fr-2xV" id="UUf-c4-jLU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrW-nV-bma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaundryRoom" width="512" height="512"/>
+    </resources>
+</document>
