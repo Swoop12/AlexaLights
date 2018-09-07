@@ -11,6 +11,7 @@ import CoreData
 
 extension Light{
     
+    @discardableResult
     convenience init(name: String, icon: UIImage, isOn: Bool = true){
         
         self.init(context: CoreDataStack.context)
